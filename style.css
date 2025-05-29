@@ -458,10 +458,11 @@ body.fullscreen #info-panel {
     .button-container {
       flex-direction: column;
       align-items: center;
+      padding: 1rem;
     }
   
     .button-container button {
-      width: 280px;
+      width: 100%;
     }
 
     .music-button {
