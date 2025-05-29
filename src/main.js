@@ -1,4 +1,3 @@
-import "./style.css";
 import { tailleCellule as defaultCellSize } from './utils/constants.js';
 import { Serpent } from './classes/Serpent.js';
 import { Terrain } from './classes/Terrain.js';
@@ -151,7 +150,7 @@ function resetAndStartGame() {
 
   gameState.updateInterval = setInterval(() => {
     update(ctx, terrain, serpent1, serpent2, tailleCellule);
-  }, 130);
+  }, 190);
 
   if (gameState.mode === "aventure") {
     rightPanel.classList.remove("hidden");
@@ -189,7 +188,7 @@ function nextLevel() {
 
   gameState.updateInterval = setInterval(() => {
     update(ctx, terrain, serpent1, serpent2, tailleCellule);
-  }, 130);
+  }, 190);
 
   startLevelTimer();
 }
