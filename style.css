@@ -253,11 +253,12 @@ body.fullscreen #info-panel {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease;
+  width: 100%;
+  padding: 0.6rem 0;
 }
 
 .btn-restart{
   background-color: #33c36f;
-  padding: 0.6rem 2rem;
 }
 
 .btn-restart:hover {
@@ -266,7 +267,6 @@ body.fullscreen #info-panel {
 
 .btn-exit {
   background-color: #a259ff;
-  padding: 0.6rem 5.2rem;
 }
 
 .btn-exit:hover {
