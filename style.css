@@ -88,7 +88,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   min-height: 100vh;
-  background-image: url("/images/grass.png");
+  background-image: url("/snake-game/images/grass.png");
   background-size: contain;
 }
 
