@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/src/main.js" defer></script>
+    <title>Snake Game</title>
+  </head>
+  <body>
+      <div id="intro-screen">
+        <img src="/images/snake-game.png" alt="Snake Logo Pixel Art" class="intro-banner" />
+        <button id="music-toggle" class="music-button" aria-label="Toggle Music">🔊</button>
+        <ul class="intro-rules">
+          <li>🍊 Mangez les fruits pour marquer des points</li>
+          <li>🌀 Les portails vous téléportent ailleurs</li>
+          <li>🚧 Évitez les obstacles</li>
+          <li>🐍 Le bot se déplace automatiquement</li>
+        </ul>
+        
+        <div class="intro-buttons">
+          <p class="button-description">Choisissez un mode pour commencer :</p>
+          <div class="button-container">
+            <button id="btn-survivant">Mode Survivant</button>
+            <button id="btn-aventure">Mode Aventure</button>
+          </div>
+        </div>
+      </div>
+  
+      <div id="game-wrapper" class="hidden">
+        <div id="game-layout">
+          <div id="score">Score : 0</div>
+          <div id="game-panel">
+            <canvas id="terrain"></canvas>
+            <div id="start-panel">
+              <button id="start-button">▶</button>
+            </div>
+          </div>
+          <div id="info-panel" class="hidden">
+            <div id="message"></div>
+            <div id="timer"></div>
+          </div>
+        </div>
+
+        <div id="mobile-controls" class="hidden">
+          <div class="arrow-row">
+            <button class="arrow-btn arrow-vertical" data-dir="0">▲</button>
+          </div>
+          <div class="arrow-row">
+            <button class="arrow-btn" data-dir="3">◀</button>
+            <button class="arrow-btn arrow-vertical" data-dir="2">▼</button>
+            <button class="arrow-btn" data-dir="1">▶</button>
+          </div>
+        </div>        
+      
+        <button id="fullscreen">Plein écran</button>
+      </div>  
+  
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-content">
+          <div id="overlay-message" class="hidden">💀 Game Over !</div>
+          <button id="restart-button" class="overlay-button btn-restart">Recommencer</button>
+          <button id="exit-button" class="overlay-button btn-exit">Sortir</button>
+        </div>
+      </div>
+      <audio id="intro-music" src="/audio/snake-title.mp3" loop></audio>
+  </body>
+</html>

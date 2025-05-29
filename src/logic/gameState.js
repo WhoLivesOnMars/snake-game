@@ -1,0 +1,18 @@
+export const gameState = {
+    score: 0,
+    mode: null,
+    level: 1,
+    fruitsToCollect: 3,
+    fruitsCollected: 0,
+    levelDuration: 15,
+    updateInterval: null,
+    countdownInterval: null,
+    levelTimer: null,
+    gameStarted: false,
+    gameOver: false,
+    awaitingNextLevel: false,
+    canRender: false,
+    messageDisplay: null,
+    scoreDisplay: null,
+    timerDisplay: null,
+};
